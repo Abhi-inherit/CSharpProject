@@ -1,0 +1,103 @@
+﻿Body {
+    background-color:#31420d;
+}
+
+.banner{
+position:absolute;
+width:55%;
+height:13%;
+margin-left:21%;
+}
+
+.mainImg {
+position:absolute;
+width:55%;
+height:74%;
+margin-left:21%;
+margin-top:8%;
+}
+
+.home {
+position:absolute;
+width:9%;
+height:3%;
+margin-left:21%;
+margin-top:6.5%;
+background-color:#697993;
+text-align:center;
+}
+
+.viewState {
+position:absolute;
+width:9%;
+height:3%;
+margin-left:30.2%;
+margin-top:6.5%;
+background-color:#697993;
+text-align:center;
+}
+
+.hiddenFields {
+position:absolute;
+width:9%;
+height:3%;
+margin-left:39.4%;
+margin-top:6.5%;
+background-color:#697993;
+text-align:center;
+}
+
+.cookies {
+position:absolute;
+width:9%;
+height:3%;
+margin-left:48.6%;
+margin-top:6.5%;
+background-color:#697993;
+text-align:center;
+}
+
+.queryString {
+position:absolute;
+width:9%;
+height:3%;
+margin-left:57.8%;
+margin-top:6.5%;
+background-color:#697993;
+text-align:center;
+}
+
+.sessionState {
+position:absolute;
+width:9%;
+height:3%;
+margin-left:67%;
+margin-top:6.5%;
+background-color:#697993;
+text-align:center;
+}
+
+.txtViewState {
+position:absolute;
+margin-left:24%;
+margin-top:12%;
+}
+
+.btnViewState {
+position:absolute;
+margin-left:24%;
+margin-top:15%;
+}
+
+.btnHidden {
+position:absolute;
+margin-left:24%;
+margin-top:12%;
+}
+
+.cookieClass {
+position:absolute;
+margin-left:24%;
+margin-top:15%;
+}
+

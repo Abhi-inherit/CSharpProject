@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_DataAdapter\Ex_2\SQL_connect\SQL_connect\bin\Debug\SQL_connect.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_DataAdapter\Ex_2\SQL_connect\SQL_connect\bin\Debug\SQL_connect.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_DataAdapter\Ex_2\SQL_connect\SQL_connect\bin\Debug\SQL_connect.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_DataAdapter\Ex_2\SQL_connect\SQL_connect\obj\Debug\SQL_connect.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_DataAdapter\Ex_2\SQL_connect\SQL_connect\obj\Debug\SQL_connect.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_DataAdapter\Ex_2\SQL_connect\SQL_connect\obj\Debug\SQL_connect.pdb

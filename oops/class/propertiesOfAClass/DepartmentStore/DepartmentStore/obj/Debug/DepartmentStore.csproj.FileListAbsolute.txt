@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\class\propertiesOfAClass\DepartmentStore\DepartmentStore\bin\Debug\DepartmentStore.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\class\propertiesOfAClass\DepartmentStore\DepartmentStore\bin\Debug\DepartmentStore.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\class\propertiesOfAClass\DepartmentStore\DepartmentStore\bin\Debug\DepartmentStore.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\class\propertiesOfAClass\DepartmentStore\DepartmentStore\obj\Debug\DepartmentStore.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\oops\class\propertiesOfAClass\DepartmentStore\DepartmentStore\obj\Debug\DepartmentStore.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\class\propertiesOfAClass\DepartmentStore\DepartmentStore\obj\Debug\DepartmentStore.pdb

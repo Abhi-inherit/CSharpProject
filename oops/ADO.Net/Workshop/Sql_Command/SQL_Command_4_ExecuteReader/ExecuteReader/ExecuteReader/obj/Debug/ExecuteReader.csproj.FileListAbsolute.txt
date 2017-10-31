@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_Command\SQL_Command_4_ExecuteReader\ExecuteReader\ExecuteReader\bin\Debug\ExecuteReader.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_Command\SQL_Command_4_ExecuteReader\ExecuteReader\ExecuteReader\bin\Debug\ExecuteReader.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_Command\SQL_Command_4_ExecuteReader\ExecuteReader\ExecuteReader\bin\Debug\ExecuteReader.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_Command\SQL_Command_4_ExecuteReader\ExecuteReader\ExecuteReader\obj\Debug\ExecuteReader.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_Command\SQL_Command_4_ExecuteReader\ExecuteReader\ExecuteReader\obj\Debug\ExecuteReader.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_Command\SQL_Command_4_ExecuteReader\ExecuteReader\ExecuteReader\obj\Debug\ExecuteReader.pdb

@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\class\classAndMethods\classAndMethod1\storekeeping\storekeeping\bin\Debug\storekeeping.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\class\classAndMethods\classAndMethod1\storekeeping\storekeeping\bin\Debug\storekeeping.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\class\classAndMethods\classAndMethod1\storekeeping\storekeeping\bin\Debug\storekeeping.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\class\classAndMethods\classAndMethod1\storekeeping\storekeeping\obj\Debug\storekeeping.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\oops\class\classAndMethods\classAndMethod1\storekeeping\storekeeping\obj\Debug\storekeeping.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\class\classAndMethods\classAndMethod1\storekeeping\storekeeping\obj\Debug\storekeeping.pdb

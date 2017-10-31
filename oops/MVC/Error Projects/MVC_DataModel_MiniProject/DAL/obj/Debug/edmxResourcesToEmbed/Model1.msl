@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_mvctourismModelStoreContainer" CdmEntityContainer="db_mvctourismEntities">
+    <EntitySetMapping Name="tbl_Booking">
+      <EntityTypeMapping TypeName="db_mvctourismModel.tbl_Booking">
+        <MappingFragment StoreEntitySet="tbl_Booking">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="fk_UserId" ColumnName="fk_UserId" />
+          <ScalarProperty Name="fk_placeid" ColumnName="fk_placeid" />
+          <ScalarProperty Name="fk_hotelid" ColumnName="fk_hotelid" />
+          <ScalarProperty Name="fk_roomid" ColumnName="fk_roomid" />
+          <ScalarProperty Name="Created_date" ColumnName="Created_date" />
+          <ScalarProperty Name="Updated_date" ColumnName="Updated_date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_District">
+      <EntityTypeMapping TypeName="db_mvctourismModel.tbl_District">
+        <MappingFragment StoreEntitySet="tbl_District">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="District_name" ColumnName="District_name" />
+          <ScalarProperty Name="Created_date" ColumnName="Created_date" />
+          <ScalarProperty Name="Updated_date" ColumnName="Updated_date" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Feedback">
+      <EntityTypeMapping TypeName="db_mvctourismModel.tbl_Feedback">
+        <MappingFragment StoreEntitySet="tbl_Feedback">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Created_date" ColumnName="Created_date" />
+          <ScalarProperty Name="Updated_date" ColumnName="Updated_date" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Hotel">
+      <EntityTypeMapping TypeName="db_mvctourismModel.tbl_Hotel">
+        <MappingFragment StoreEntitySet="tbl_Hotel">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="fk_Districtid" ColumnName="fk_Districtid" />
+          <ScalarProperty Name="fk_Placeid" ColumnName="fk_Placeid" />
+          <ScalarProperty Name="fk_Roomid" ColumnName="fk_Roomid" />
+          <ScalarProperty Name="Hotel_Name" ColumnName="Hotel_Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Discription" ColumnName="Discription" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Hotel_Type" ColumnName="Hotel_Type" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Created_date" ColumnName="Created_date" />
+          <ScalarProperty Name="Updated_date" ColumnName="Updated_date" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Room">
+      <EntityTypeMapping TypeName="db_mvctourismModel.tbl_Room">
+        <MappingFragment StoreEntitySet="tbl_Room">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Room_Type" ColumnName="Room_Type" />
+          <ScalarProperty Name="Created_Date" ColumnName="Created_Date" />
+          <ScalarProperty Name="Updated_Date" ColumnName="Updated_Date" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Tax">
+      <EntityTypeMapping TypeName="db_mvctourismModel.tbl_Tax">
+        <MappingFragment StoreEntitySet="tbl_Tax">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="fk_Districtid" ColumnName="fk_Districtid" />
+          <ScalarProperty Name="fk_Roomid" ColumnName="fk_Roomid" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="Created_Date" ColumnName="Created_Date" />
+          <ScalarProperty Name="Updated_Date" ColumnName="Updated_Date" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TouristPlaces">
+      <EntityTypeMapping TypeName="db_mvctourismModel.tbl_TouristPlaces">
+        <MappingFragment StoreEntitySet="tbl_TouristPlaces">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Fk_Districtid" ColumnName="Fk_Districtid" />
+          <ScalarProperty Name="Places" ColumnName="Places" />
+          <ScalarProperty Name="Discription" ColumnName="Discription" />
+          <ScalarProperty Name="Nearesr_Place" ColumnName="Nearesr_Place" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Created_date" ColumnName="Created_date" />
+          <ScalarProperty Name="Updated_date" ColumnName="Updated_date" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_UserRegistration">
+      <EntityTypeMapping TypeName="db_mvctourismModel.tbl_UserRegistration">
+        <MappingFragment StoreEntitySet="tbl_UserRegistration">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="User_name" ColumnName="User_name" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Created_date" ColumnName="Created_date" />
+          <ScalarProperty Name="Updated_date" ColumnName="Updated_date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_GetallPlaces" FunctionName="db_mvctourismModel.Store.sp_GetallPlaces">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="db_mvctourismModel.sp_GetallPlaces_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Fk_Districtid" ColumnName="Fk_Districtid" />
+          <ScalarProperty Name="Places" ColumnName="Places" />
+          <ScalarProperty Name="Discription" ColumnName="Discription" />
+          <ScalarProperty Name="Nearesr_Place" ColumnName="Nearesr_Place" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Created_date" ColumnName="Created_date" />
+          <ScalarProperty Name="Updated_date" ColumnName="Updated_date" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_UserReg" FunctionName="db_mvctourismModel.Store.sp_UserReg" />
+  </EntityContainerMapping>
+</Mapping>

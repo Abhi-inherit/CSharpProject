@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Student_RegisterationModelStoreContainer" CdmEntityContainer="Student_RegisterationEntities1">
+    <EntitySetMapping Name="Districts">
+      <EntityTypeMapping TypeName="Student_RegisterationModel.District">
+        <MappingFragment StoreEntitySet="District">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="district_name" ColumnName="district_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentDetails">
+      <EntityTypeMapping TypeName="Student_RegisterationModel.StudentDetail">
+        <MappingFragment StoreEntitySet="StudentDetail">
+          <ScalarProperty Name="studentId" ColumnName="studentId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="eMail" ColumnName="eMail" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="course" ColumnName="course" />
+          <ScalarProperty Name="district" ColumnName="district" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="DistrictDelete" FunctionName="Student_RegisterationModel.Store.DistrictDelete" />
+    <FunctionImportMapping FunctionImportName="DistrictInsert" FunctionName="Student_RegisterationModel.Store.DistrictInsert" />
+    <FunctionImportMapping FunctionImportName="DistrictUpdate" FunctionName="Student_RegisterationModel.Store.DistrictUpdate" />
+    <FunctionImportMapping FunctionImportName="StudentDelete" FunctionName="Student_RegisterationModel.Store.StudentDelete" />
+    <FunctionImportMapping FunctionImportName="StudentRegister" FunctionName="Student_RegisterationModel.Store.StudentRegister" />
+    <FunctionImportMapping FunctionImportName="StudentRegisterUpdate" FunctionName="Student_RegisterationModel.Store.StudentRegisterUpdate" />
+  </EntityContainerMapping>
+</Mapping>

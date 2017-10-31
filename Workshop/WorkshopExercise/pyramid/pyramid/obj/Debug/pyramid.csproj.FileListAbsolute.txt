@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\Workshop\WorkshopExercise\pyramid\pyramid\bin\Debug\pyramid.exe.config
+C:\Users\HP\Desktop\Abhi\C#\Workshop\WorkshopExercise\pyramid\pyramid\bin\Debug\pyramid.exe
+C:\Users\HP\Desktop\Abhi\C#\Workshop\WorkshopExercise\pyramid\pyramid\bin\Debug\pyramid.pdb
+C:\Users\HP\Desktop\Abhi\C#\Workshop\WorkshopExercise\pyramid\pyramid\obj\Debug\pyramid.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\Workshop\WorkshopExercise\pyramid\pyramid\obj\Debug\pyramid.exe
+C:\Users\HP\Desktop\Abhi\C#\Workshop\WorkshopExercise\pyramid\pyramid\obj\Debug\pyramid.pdb

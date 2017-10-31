@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_mvctourismModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="db_mvctourismEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_Booking" EntityType="db_mvctourismModel.tbl_Booking" />
+    <EntitySet Name="tbl_District" EntityType="db_mvctourismModel.tbl_District" />
+    <EntitySet Name="tbl_Feedback" EntityType="db_mvctourismModel.tbl_Feedback" />
+    <EntitySet Name="tbl_Hotel" EntityType="db_mvctourismModel.tbl_Hotel" />
+    <EntitySet Name="tbl_Room" EntityType="db_mvctourismModel.tbl_Room" />
+    <EntitySet Name="tbl_Tax" EntityType="db_mvctourismModel.tbl_Tax" />
+    <EntitySet Name="tbl_TouristPlaces" EntityType="db_mvctourismModel.tbl_TouristPlaces" />
+    <EntitySet Name="tbl_UserRegistration" EntityType="db_mvctourismModel.tbl_UserRegistration" />
+    <AssociationSet Name="FK_tbl_Booking_tbl_Hotel" Association="db_mvctourismModel.FK_tbl_Booking_tbl_Hotel">
+      <End Role="tbl_Hotel" EntitySet="tbl_Hotel" />
+      <End Role="tbl_Booking" EntitySet="tbl_Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Booking_tbl_Room" Association="db_mvctourismModel.FK_tbl_Booking_tbl_Room">
+      <End Role="tbl_Room" EntitySet="tbl_Room" />
+      <End Role="tbl_Booking" EntitySet="tbl_Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Booking_tbl_TouristPlaces" Association="db_mvctourismModel.FK_tbl_Booking_tbl_TouristPlaces">
+      <End Role="tbl_TouristPlaces" EntitySet="tbl_TouristPlaces" />
+      <End Role="tbl_Booking" EntitySet="tbl_Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Booking_tbl_UserRegistration" Association="db_mvctourismModel.FK_tbl_Booking_tbl_UserRegistration">
+      <End Role="tbl_UserRegistration" EntitySet="tbl_UserRegistration" />
+      <End Role="tbl_Booking" EntitySet="tbl_Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Hotel_tbl_District" Association="db_mvctourismModel.FK_tbl_Hotel_tbl_District">
+      <End Role="tbl_District" EntitySet="tbl_District" />
+      <End Role="tbl_Hotel" EntitySet="tbl_Hotel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Tax_tbl_District" Association="db_mvctourismModel.FK_tbl_Tax_tbl_District">
+      <End Role="tbl_District" EntitySet="tbl_District" />
+      <End Role="tbl_Tax" EntitySet="tbl_Tax" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_TouristPlaces_tbl_District" Association="db_mvctourismModel.FK_tbl_TouristPlaces_tbl_District">
+      <End Role="tbl_District" EntitySet="tbl_District" />
+      <End Role="tbl_TouristPlaces" EntitySet="tbl_TouristPlaces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Hotel_tbl_Room" Association="db_mvctourismModel.FK_tbl_Hotel_tbl_Room">
+      <End Role="tbl_Room" EntitySet="tbl_Room" />
+      <End Role="tbl_Hotel" EntitySet="tbl_Hotel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Hotel_tbl_TouristPlaces" Association="db_mvctourismModel.FK_tbl_Hotel_tbl_TouristPlaces">
+      <End Role="tbl_TouristPlaces" EntitySet="tbl_TouristPlaces" />
+      <End Role="tbl_Hotel" EntitySet="tbl_Hotel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Tax_tbl_Room" Association="db_mvctourismModel.FK_tbl_Tax_tbl_Room">
+      <End Role="tbl_Room" EntitySet="tbl_Room" />
+      <End Role="tbl_Tax" EntitySet="tbl_Tax" />
+    </AssociationSet>
+    <FunctionImport Name="sp_GetallPlaces" ReturnType="Collection(db_mvctourismModel.sp_GetallPlaces_Result)" />
+    <FunctionImport Name="sp_UserReg" ReturnType="Collection(String)">
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="address" Mode="In" Type="String" />
+      <Parameter Name="email" Mode="In" Type="String" />
+      <Parameter Name="phone" Mode="In" Type="String" />
+      <Parameter Name="image" Mode="In" Type="String" />
+      <Parameter Name="uname" Mode="In" Type="String" />
+      <Parameter Name="pswd" Mode="In" Type="String" />
+      <Parameter Name="cdate" Mode="In" Type="DateTime" />
+      <Parameter Name="udate" Mode="In" Type="DateTime" />
+      <Parameter Name="status" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="tbl_Booking">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="fk_UserId" Type="Int32" Nullable="false" />
+    <Property Name="fk_placeid" Type="Int32" Nullable="false" />
+    <Property Name="fk_hotelid" Type="Int32" Nullable="false" />
+    <Property Name="fk_roomid" Type="Int32" Nullable="false" />
+    <Property Name="Created_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Updated_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="status" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tbl_Hotel" Relationship="db_mvctourismModel.FK_tbl_Booking_tbl_Hotel" FromRole="tbl_Booking" ToRole="tbl_Hotel" />
+    <NavigationProperty Name="tbl_Room" Relationship="db_mvctourismModel.FK_tbl_Booking_tbl_Room" FromRole="tbl_Booking" ToRole="tbl_Room" />
+    <NavigationProperty Name="tbl_TouristPlaces" Relationship="db_mvctourismModel.FK_tbl_Booking_tbl_TouristPlaces" FromRole="tbl_Booking" ToRole="tbl_TouristPlaces" />
+    <NavigationProperty Name="tbl_UserRegistration" Relationship="db_mvctourismModel.FK_tbl_Booking_tbl_UserRegistration" FromRole="tbl_Booking" ToRole="tbl_UserRegistration" />
+  </EntityType>
+  <EntityType Name="tbl_District">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="District_name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Created_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Updated_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tbl_Hotel" Relationship="db_mvctourismModel.FK_tbl_Hotel_tbl_District" FromRole="tbl_District" ToRole="tbl_Hotel" />
+    <NavigationProperty Name="tbl_Tax" Relationship="db_mvctourismModel.FK_tbl_Tax_tbl_District" FromRole="tbl_District" ToRole="tbl_Tax" />
+    <NavigationProperty Name="tbl_TouristPlaces" Relationship="db_mvctourismModel.FK_tbl_TouristPlaces_tbl_District" FromRole="tbl_District" ToRole="tbl_TouristPlaces" />
+  </EntityType>
+  <EntityType Name="tbl_Feedback">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Message" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Created_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Updated_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_Hotel">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="fk_Districtid" Type="Int32" Nullable="false" />
+    <Property Name="fk_Placeid" Type="Int32" Nullable="false" />
+    <Property Name="fk_Roomid" Type="Int32" Nullable="false" />
+    <Property Name="Hotel_Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Image" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Discription" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Location" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Hotel_Type" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Price" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Created_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Updated_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tbl_Booking" Relationship="db_mvctourismModel.FK_tbl_Booking_tbl_Hotel" FromRole="tbl_Hotel" ToRole="tbl_Booking" />
+    <NavigationProperty Name="tbl_District" Relationship="db_mvctourismModel.FK_tbl_Hotel_tbl_District" FromRole="tbl_Hotel" ToRole="tbl_District" />
+    <NavigationProperty Name="tbl_Room" Relationship="db_mvctourismModel.FK_tbl_Hotel_tbl_Room" FromRole="tbl_Hotel" ToRole="tbl_Room" />
+    <NavigationProperty Name="tbl_TouristPlaces" Relationship="db_mvctourismModel.FK_tbl_Hotel_tbl_TouristPlaces" FromRole="tbl_Hotel" ToRole="tbl_TouristPlaces" />
+  </EntityType>
+  <EntityType Name="tbl_Room">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Room_Type" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Created_Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Updated_Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tbl_Booking" Relationship="db_mvctourismModel.FK_tbl_Booking_tbl_Room" FromRole="tbl_Room" ToRole="tbl_Booking" />
+    <NavigationProperty Name="tbl_Hotel" Relationship="db_mvctourismModel.FK_tbl_Hotel_tbl_Room" FromRole="tbl_Room" ToRole="tbl_Hotel" />
+    <NavigationProperty Name="tbl_Tax" Relationship="db_mvctourismModel.FK_tbl_Tax_tbl_Room" FromRole="tbl_Room" ToRole="tbl_Tax" />
+  </EntityType>
+  <EntityType Name="tbl_Tax">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="fk_Districtid" Type="Int32" />
+    <Property Name="fk_Roomid" Type="Int32" />
+    <Property Name="Tax" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Created_Date" Type="DateTime" Precision="3" />
+    <Property Name="Updated_Date" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tbl_District" Relationship="db_mvctourismModel.FK_tbl_Tax_tbl_District" FromRole="tbl_Tax" ToRole="tbl_District" />
+    <NavigationProperty Name="tbl_Room" Relationship="db_mvctourismModel.FK_tbl_Tax_tbl_Room" FromRole="tbl_Tax" ToRole="tbl_Room" />
+  </EntityType>
+  <EntityType Name="tbl_TouristPlaces">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Fk_Districtid" Type="Int32" Nullable="false" />
+    <Property Name="Places" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Discription" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Nearesr_Place" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Image" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Created_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Updated_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tbl_Booking" Relationship="db_mvctourismModel.FK_tbl_Booking_tbl_TouristPlaces" FromRole="tbl_TouristPlaces" ToRole="tbl_Booking" />
+    <NavigationProperty Name="tbl_District" Relationship="db_mvctourismModel.FK_tbl_TouristPlaces_tbl_District" FromRole="tbl_TouristPlaces" ToRole="tbl_District" />
+    <NavigationProperty Name="tbl_Hotel" Relationship="db_mvctourismModel.FK_tbl_Hotel_tbl_TouristPlaces" FromRole="tbl_TouristPlaces" ToRole="tbl_Hotel" />
+  </EntityType>
+  <EntityType Name="tbl_UserRegistration">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Image" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="User_name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Created_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Updated_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="status" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tbl_Booking" Relationship="db_mvctourismModel.FK_tbl_Booking_tbl_UserRegistration" FromRole="tbl_UserRegistration" ToRole="tbl_Booking" />
+  </EntityType>
+  <Association Name="FK_tbl_Booking_tbl_Hotel">
+    <End Role="tbl_Hotel" Type="db_mvctourismModel.tbl_Hotel" Multiplicity="1" />
+    <End Role="tbl_Booking" Type="db_mvctourismModel.tbl_Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Hotel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Booking">
+        <PropertyRef Name="fk_hotelid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Booking_tbl_Room">
+    <End Role="tbl_Room" Type="db_mvctourismModel.tbl_Room" Multiplicity="1" />
+    <End Role="tbl_Booking" Type="db_mvctourismModel.tbl_Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Room">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Booking">
+        <PropertyRef Name="fk_roomid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Booking_tbl_TouristPlaces">
+    <End Role="tbl_TouristPlaces" Type="db_mvctourismModel.tbl_TouristPlaces" Multiplicity="1" />
+    <End Role="tbl_Booking" Type="db_mvctourismModel.tbl_Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_TouristPlaces">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Booking">
+        <PropertyRef Name="fk_placeid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Booking_tbl_UserRegistration">
+    <End Role="tbl_UserRegistration" Type="db_mvctourismModel.tbl_UserRegistration" Multiplicity="1" />
+    <End Role="tbl_Booking" Type="db_mvctourismModel.tbl_Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_UserRegistration">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Booking">
+        <PropertyRef Name="fk_UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Hotel_tbl_District">
+    <End Role="tbl_District" Type="db_mvctourismModel.tbl_District" Multiplicity="1" />
+    <End Role="tbl_Hotel" Type="db_mvctourismModel.tbl_Hotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_District">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Hotel">
+        <PropertyRef Name="fk_Districtid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Tax_tbl_District">
+    <End Role="tbl_District" Type="db_mvctourismModel.tbl_District" Multiplicity="0..1" />
+    <End Role="tbl_Tax" Type="db_mvctourismModel.tbl_Tax" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_District">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Tax">
+        <PropertyRef Name="fk_Districtid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_TouristPlaces_tbl_District">
+    <End Role="tbl_District" Type="db_mvctourismModel.tbl_District" Multiplicity="1" />
+    <End Role="tbl_TouristPlaces" Type="db_mvctourismModel.tbl_TouristPlaces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_District">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_TouristPlaces">
+        <PropertyRef Name="Fk_Districtid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Hotel_tbl_Room">
+    <End Role="tbl_Room" Type="db_mvctourismModel.tbl_Room" Multiplicity="1" />
+    <End Role="tbl_Hotel" Type="db_mvctourismModel.tbl_Hotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Room">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Hotel">
+        <PropertyRef Name="fk_Roomid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Hotel_tbl_TouristPlaces">
+    <End Role="tbl_TouristPlaces" Type="db_mvctourismModel.tbl_TouristPlaces" Multiplicity="1" />
+    <End Role="tbl_Hotel" Type="db_mvctourismModel.tbl_Hotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_TouristPlaces">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Hotel">
+        <PropertyRef Name="fk_Placeid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Tax_tbl_Room">
+    <End Role="tbl_Room" Type="db_mvctourismModel.tbl_Room" Multiplicity="0..1" />
+    <End Role="tbl_Tax" Type="db_mvctourismModel.tbl_Tax" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Room">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Tax">
+        <PropertyRef Name="fk_Roomid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="sp_GetallPlaces_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="Fk_Districtid" Nullable="false" />
+    <Property Type="String" Name="Places" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Discription" Nullable="false" />
+    <Property Type="String" Name="Nearesr_Place" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Image" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="Created_date" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="Updated_date" Nullable="false" Precision="23" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="50" />
+  </ComplexType>
+</Schema>

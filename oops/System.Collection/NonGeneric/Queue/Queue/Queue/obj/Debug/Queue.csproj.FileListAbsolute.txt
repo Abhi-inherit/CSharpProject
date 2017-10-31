@@ -1,0 +1,2 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\NonGeneric\Queue\Queue\Queue\bin\Debug\Queue.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\NonGeneric\Queue\Queue\Queue\obj\Debug\Queue.csprojResolveAssemblyReference.cache

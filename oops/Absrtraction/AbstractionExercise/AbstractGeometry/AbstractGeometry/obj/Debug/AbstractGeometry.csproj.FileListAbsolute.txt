@@ -1,0 +1,5 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\Absrtraction\AbstractionExercise\AbstractGeometry\AbstractGeometry\bin\Debug\AbstractGeometry.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\Absrtraction\AbstractionExercise\AbstractGeometry\AbstractGeometry\bin\Debug\AbstractGeometry.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\Absrtraction\AbstractionExercise\AbstractGeometry\AbstractGeometry\bin\Debug\AbstractGeometry.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\Absrtraction\AbstractionExercise\AbstractGeometry\AbstractGeometry\obj\Debug\AbstractGeometry.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\Absrtraction\AbstractionExercise\AbstractGeometry\AbstractGeometry\obj\Debug\AbstractGeometry.pdb

@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_mvctourismModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="db_mvctourismModelStoreContainer">
+    <EntitySet Name="tbl_Booking" EntityType="db_mvctourismModel.Store.tbl_Booking" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_District" EntityType="db_mvctourismModel.Store.tbl_District" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Feedback" EntityType="db_mvctourismModel.Store.tbl_Feedback" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Hotel" EntityType="db_mvctourismModel.Store.tbl_Hotel" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Room" EntityType="db_mvctourismModel.Store.tbl_Room" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Tax" EntityType="db_mvctourismModel.Store.tbl_Tax" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_TouristPlaces" EntityType="db_mvctourismModel.Store.tbl_TouristPlaces" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_UserRegistration" EntityType="db_mvctourismModel.Store.tbl_UserRegistration" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_tbl_Booking_tbl_Hotel" Association="db_mvctourismModel.Store.FK_tbl_Booking_tbl_Hotel">
+      <End Role="tbl_Hotel" EntitySet="tbl_Hotel" />
+      <End Role="tbl_Booking" EntitySet="tbl_Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Booking_tbl_Room" Association="db_mvctourismModel.Store.FK_tbl_Booking_tbl_Room">
+      <End Role="tbl_Room" EntitySet="tbl_Room" />
+      <End Role="tbl_Booking" EntitySet="tbl_Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Booking_tbl_TouristPlaces" Association="db_mvctourismModel.Store.FK_tbl_Booking_tbl_TouristPlaces">
+      <End Role="tbl_TouristPlaces" EntitySet="tbl_TouristPlaces" />
+      <End Role="tbl_Booking" EntitySet="tbl_Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Booking_tbl_UserRegistration" Association="db_mvctourismModel.Store.FK_tbl_Booking_tbl_UserRegistration">
+      <End Role="tbl_UserRegistration" EntitySet="tbl_UserRegistration" />
+      <End Role="tbl_Booking" EntitySet="tbl_Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Hotel_tbl_District" Association="db_mvctourismModel.Store.FK_tbl_Hotel_tbl_District">
+      <End Role="tbl_District" EntitySet="tbl_District" />
+      <End Role="tbl_Hotel" EntitySet="tbl_Hotel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Hotel_tbl_Room" Association="db_mvctourismModel.Store.FK_tbl_Hotel_tbl_Room">
+      <End Role="tbl_Room" EntitySet="tbl_Room" />
+      <End Role="tbl_Hotel" EntitySet="tbl_Hotel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Hotel_tbl_TouristPlaces" Association="db_mvctourismModel.Store.FK_tbl_Hotel_tbl_TouristPlaces">
+      <End Role="tbl_TouristPlaces" EntitySet="tbl_TouristPlaces" />
+      <End Role="tbl_Hotel" EntitySet="tbl_Hotel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Tax_tbl_District" Association="db_mvctourismModel.Store.FK_tbl_Tax_tbl_District">
+      <End Role="tbl_District" EntitySet="tbl_District" />
+      <End Role="tbl_Tax" EntitySet="tbl_Tax" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Tax_tbl_Room" Association="db_mvctourismModel.Store.FK_tbl_Tax_tbl_Room">
+      <End Role="tbl_Room" EntitySet="tbl_Room" />
+      <End Role="tbl_Tax" EntitySet="tbl_Tax" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_TouristPlaces_tbl_District" Association="db_mvctourismModel.Store.FK_tbl_TouristPlaces_tbl_District">
+      <End Role="tbl_District" EntitySet="tbl_District" />
+      <End Role="tbl_TouristPlaces" EntitySet="tbl_TouristPlaces" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tbl_Booking">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fk_UserId" Type="int" Nullable="false" />
+    <Property Name="fk_placeid" Type="int" Nullable="false" />
+    <Property Name="fk_hotelid" Type="int" Nullable="false" />
+    <Property Name="fk_roomid" Type="int" Nullable="false" />
+    <Property Name="Created_date" Type="datetime" Nullable="false" />
+    <Property Name="Updated_date" Type="datetime" Nullable="false" />
+    <Property Name="status" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_District">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="District_name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Created_date" Type="datetime" Nullable="false" />
+    <Property Name="Updated_date" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Feedback">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Message" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Created_date" Type="datetime" Nullable="false" />
+    <Property Name="Updated_date" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Hotel">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fk_Districtid" Type="int" Nullable="false" />
+    <Property Name="fk_Placeid" Type="int" Nullable="false" />
+    <Property Name="fk_Roomid" Type="int" Nullable="false" />
+    <Property Name="Hotel_Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Image" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Discription" Type="varchar(max)" Nullable="false" />
+    <Property Name="Location" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Phone" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Hotel_Type" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Price" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Email" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Created_date" Type="datetime" Nullable="false" />
+    <Property Name="Updated_date" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Room">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Room_Type" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Created_Date" Type="datetime" Nullable="false" />
+    <Property Name="Updated_Date" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Tax">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fk_Districtid" Type="int" />
+    <Property Name="fk_Roomid" Type="int" />
+    <Property Name="Tax" Type="varchar" MaxLength="50" />
+    <Property Name="Created_Date" Type="datetime" />
+    <Property Name="Updated_Date" Type="datetime" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_TouristPlaces">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Fk_Districtid" Type="int" Nullable="false" />
+    <Property Name="Places" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Discription" Type="varchar(max)" Nullable="false" />
+    <Property Name="Nearesr_Place" Type="varchar" MaxLength="50" />
+    <Property Name="Image" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Created_date" Type="datetime" Nullable="false" />
+    <Property Name="Updated_date" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_UserRegistration">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Address" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Email" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Phone" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Image" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="User_name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Created_date" Type="datetime" Nullable="false" />
+    <Property Name="Updated_date" Type="datetime" Nullable="false" />
+    <Property Name="status" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_tbl_Booking_tbl_Hotel">
+    <End Role="tbl_Hotel" Type="db_mvctourismModel.Store.tbl_Hotel" Multiplicity="1" />
+    <End Role="tbl_Booking" Type="db_mvctourismModel.Store.tbl_Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Hotel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Booking">
+        <PropertyRef Name="fk_hotelid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Booking_tbl_Room">
+    <End Role="tbl_Room" Type="db_mvctourismModel.Store.tbl_Room" Multiplicity="1" />
+    <End Role="tbl_Booking" Type="db_mvctourismModel.Store.tbl_Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Room">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Booking">
+        <PropertyRef Name="fk_roomid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Booking_tbl_TouristPlaces">
+    <End Role="tbl_TouristPlaces" Type="db_mvctourismModel.Store.tbl_TouristPlaces" Multiplicity="1" />
+    <End Role="tbl_Booking" Type="db_mvctourismModel.Store.tbl_Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_TouristPlaces">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Booking">
+        <PropertyRef Name="fk_placeid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Booking_tbl_UserRegistration">
+    <End Role="tbl_UserRegistration" Type="db_mvctourismModel.Store.tbl_UserRegistration" Multiplicity="1" />
+    <End Role="tbl_Booking" Type="db_mvctourismModel.Store.tbl_Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_UserRegistration">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Booking">
+        <PropertyRef Name="fk_UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Hotel_tbl_District">
+    <End Role="tbl_District" Type="db_mvctourismModel.Store.tbl_District" Multiplicity="1" />
+    <End Role="tbl_Hotel" Type="db_mvctourismModel.Store.tbl_Hotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_District">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Hotel">
+        <PropertyRef Name="fk_Districtid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Hotel_tbl_Room">
+    <End Role="tbl_Room" Type="db_mvctourismModel.Store.tbl_Room" Multiplicity="1" />
+    <End Role="tbl_Hotel" Type="db_mvctourismModel.Store.tbl_Hotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Room">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Hotel">
+        <PropertyRef Name="fk_Roomid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Hotel_tbl_TouristPlaces">
+    <End Role="tbl_TouristPlaces" Type="db_mvctourismModel.Store.tbl_TouristPlaces" Multiplicity="1" />
+    <End Role="tbl_Hotel" Type="db_mvctourismModel.Store.tbl_Hotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_TouristPlaces">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Hotel">
+        <PropertyRef Name="fk_Placeid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Tax_tbl_District">
+    <End Role="tbl_District" Type="db_mvctourismModel.Store.tbl_District" Multiplicity="0..1" />
+    <End Role="tbl_Tax" Type="db_mvctourismModel.Store.tbl_Tax" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_District">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Tax">
+        <PropertyRef Name="fk_Districtid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Tax_tbl_Room">
+    <End Role="tbl_Room" Type="db_mvctourismModel.Store.tbl_Room" Multiplicity="0..1" />
+    <End Role="tbl_Tax" Type="db_mvctourismModel.Store.tbl_Tax" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Room">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Tax">
+        <PropertyRef Name="fk_Roomid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_TouristPlaces_tbl_District">
+    <End Role="tbl_District" Type="db_mvctourismModel.Store.tbl_District" Multiplicity="1" />
+    <End Role="tbl_TouristPlaces" Type="db_mvctourismModel.Store.tbl_TouristPlaces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_District">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_TouristPlaces">
+        <PropertyRef Name="Fk_Districtid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="sp_GetallPlaces" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_UserReg" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="name" Type="varchar" Mode="In" />
+    <Parameter Name="address" Type="varchar" Mode="In" />
+    <Parameter Name="email" Type="varchar" Mode="In" />
+    <Parameter Name="phone" Type="varchar" Mode="In" />
+    <Parameter Name="image" Type="varchar" Mode="In" />
+    <Parameter Name="uname" Type="varchar" Mode="In" />
+    <Parameter Name="pswd" Type="varchar" Mode="In" />
+    <Parameter Name="cdate" Type="datetime" Mode="In" />
+    <Parameter Name="udate" Type="datetime" Mode="In" />
+    <Parameter Name="status" Type="varchar" Mode="In" />
+  </Function>
+</Schema>

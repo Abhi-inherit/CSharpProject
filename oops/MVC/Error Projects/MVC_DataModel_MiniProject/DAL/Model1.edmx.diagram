@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="862d8235509349bca4735889eefc2c8d" Name="Diagram1">
+        <EntityTypeShape EntityType="db_mvctourismModel.tbl_Booking" Width="1.5" PointX="7.5" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_mvctourismModel.tbl_District" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_mvctourismModel.tbl_Feedback" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_mvctourismModel.tbl_Hotel" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_mvctourismModel.tbl_Room" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_mvctourismModel.tbl_Tax" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_mvctourismModel.tbl_TouristPlaces" Width="1.5" PointX="3" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_mvctourismModel.tbl_UserRegistration" Width="1.5" PointX="5.25" PointY="16.5" IsExpanded="true" />
+        <AssociationConnector Association="db_mvctourismModel.FK_tbl_Booking_tbl_Hotel" ManuallyRouted="false" />
+        <AssociationConnector Association="db_mvctourismModel.FK_tbl_Booking_tbl_Room" ManuallyRouted="false" />
+        <AssociationConnector Association="db_mvctourismModel.FK_tbl_Booking_tbl_TouristPlaces" ManuallyRouted="false" />
+        <AssociationConnector Association="db_mvctourismModel.FK_tbl_Booking_tbl_UserRegistration" ManuallyRouted="false" />
+        <AssociationConnector Association="db_mvctourismModel.FK_tbl_Hotel_tbl_District" ManuallyRouted="false" />
+        <AssociationConnector Association="db_mvctourismModel.FK_tbl_Tax_tbl_District" ManuallyRouted="false" />
+        <AssociationConnector Association="db_mvctourismModel.FK_tbl_TouristPlaces_tbl_District" ManuallyRouted="false" />
+        <AssociationConnector Association="db_mvctourismModel.FK_tbl_Hotel_tbl_Room" ManuallyRouted="false" />
+        <AssociationConnector Association="db_mvctourismModel.FK_tbl_Hotel_tbl_TouristPlaces" ManuallyRouted="false" />
+        <AssociationConnector Association="db_mvctourismModel.FK_tbl_Tax_tbl_Room" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

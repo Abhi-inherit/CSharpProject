@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\Inheritance\circleReference\circleProperties\circleProperties\bin\Debug\circleProperties.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\Inheritance\circleReference\circleProperties\circleProperties\bin\Debug\circleProperties.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\Inheritance\circleReference\circleProperties\circleProperties\bin\Debug\circleProperties.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\Inheritance\circleReference\circleProperties\circleProperties\obj\Debug\circleProperties.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\oops\Inheritance\circleReference\circleProperties\circleProperties\obj\Debug\circleProperties.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\Inheritance\circleReference\circleProperties\circleProperties\obj\Debug\circleProperties.pdb

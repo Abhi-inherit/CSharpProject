@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\exercise\PersonalInformationSystem\PersonalInformationSystem\bin\Debug\PersonalInformationSystem.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\exercise\PersonalInformationSystem\PersonalInformationSystem\bin\Debug\PersonalInformationSystem.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\exercise\PersonalInformationSystem\PersonalInformationSystem\bin\Debug\PersonalInformationSystem.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\exercise\PersonalInformationSystem\PersonalInformationSystem\obj\Debug\PersonalInformationSystem.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\exercise\PersonalInformationSystem\PersonalInformationSystem\obj\Debug\PersonalInformationSystem.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\exercise\PersonalInformationSystem\PersonalInformationSystem\obj\Debug\PersonalInformationSystem.csprojResolveAssemblyReference.cache

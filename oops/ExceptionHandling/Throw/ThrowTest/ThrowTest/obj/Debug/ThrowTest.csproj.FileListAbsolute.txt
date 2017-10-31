@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\ExceptionHandling\Throw\ThrowTest\ThrowTest\bin\Debug\ThrowTest.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\ExceptionHandling\Throw\ThrowTest\ThrowTest\bin\Debug\ThrowTest.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\ExceptionHandling\Throw\ThrowTest\ThrowTest\bin\Debug\ThrowTest.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\ExceptionHandling\Throw\ThrowTest\ThrowTest\obj\Debug\ThrowTest.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\oops\ExceptionHandling\Throw\ThrowTest\ThrowTest\obj\Debug\ThrowTest.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\ExceptionHandling\Throw\ThrowTest\ThrowTest\obj\Debug\ThrowTest.pdb

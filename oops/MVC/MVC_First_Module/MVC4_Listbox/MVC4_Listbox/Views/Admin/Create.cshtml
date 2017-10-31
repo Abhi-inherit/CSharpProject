@@ -1,0 +1,78 @@
+﻿@model MVC4_Listbox.Models.ent_Registration
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Registration</legend>
+
+        <div class="form-group">
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Name)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Name,"", new { @class = "text-danger" } )
+            </div>
+        </div>  
+
+         <div class="form-group">
+             <div class="editor-label">
+                @Html.LabelFor(model => model.DateOfBirth)
+             </div>
+             <div class="editor-field">
+                @Html.TextBoxFor(model => model.DateOfBirth, new { @class = "form-control", @type = "date" })
+                        @Html.ValidationMessageFor(model => model.DateOfBirth,"", new { @class = "text-danger" } )
+             </div>
+         </div>
+
+        <div class="form-group">
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.Address)
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(model => model.Address, new { @class = "form-control", @rows = 3 })
+                    @Html.ValidationMessageFor(model => model.Address,"", new { @class = "text-danger" } )
+                </div>
+            </div>
+
+        <div class="form-group">
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.Phone)
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(model => model.Phone, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Phone,"", new { @class = "text-danger" } )
+                </div>
+            </div>
+
+        <div class="form-group">
+            <div class="editor-label">
+                @Html.LabelFor(model => model.PlaceID)
+            </div>
+            <div class="editor-field">
+                 @Html.DropDownList("PlaceID", (SelectList)ViewData["PlaceID"], new { @class = "form-control ab" })
+                    @Html.ValidationMessageFor(model => model.PlaceID,"", new { @class = "text-danger" } )
+                </div>
+        </div>
+
+        <p>
+             @Html.ValidationSummary()
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+

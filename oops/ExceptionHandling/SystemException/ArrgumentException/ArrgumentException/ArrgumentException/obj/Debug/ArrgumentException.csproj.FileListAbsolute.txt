@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\ExceptionHandling\SystemException\ArrgumentException\ArrgumentException\ArrgumentException\bin\Debug\ArrgumentException.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\ExceptionHandling\SystemException\ArrgumentException\ArrgumentException\ArrgumentException\bin\Debug\ArrgumentException.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\ExceptionHandling\SystemException\ArrgumentException\ArrgumentException\ArrgumentException\bin\Debug\ArrgumentException.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\ExceptionHandling\SystemException\ArrgumentException\ArrgumentException\ArrgumentException\obj\Debug\ArrgumentException.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\oops\ExceptionHandling\SystemException\ArrgumentException\ArrgumentException\ArrgumentException\obj\Debug\ArrgumentException.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\ExceptionHandling\SystemException\ArrgumentException\ArrgumentException\ArrgumentException\obj\Debug\ArrgumentException.pdb

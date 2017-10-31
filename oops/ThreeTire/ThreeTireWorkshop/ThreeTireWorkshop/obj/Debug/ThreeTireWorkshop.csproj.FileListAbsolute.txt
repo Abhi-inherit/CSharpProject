@@ -1,0 +1,9 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\ThreeTireWorkshop\bin\ThreeTireWorkshop.dll
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\ThreeTireWorkshop\bin\ThreeTireWorkshop.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\ThreeTireWorkshop\obj\Debug\ThreeTireWorkshop.dll
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\ThreeTireWorkshop\obj\Debug\ThreeTireWorkshop.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\ThreeTireWorkshop\bin\BLL.dll
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\ThreeTireWorkshop\bin\BLL.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\ThreeTireWorkshop\obj\Debug\ThreeTireWorkshop.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\ThreeTireWorkshop\bin\DAL.dll
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\ThreeTireWorkshop\bin\DAL.pdb

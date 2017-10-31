@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\Absrtraction\AbstractionExercise\AbstractionExercise\bin\Debug\AbstractionExercise.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\Absrtraction\AbstractionExercise\AbstractionExercise\bin\Debug\AbstractionExercise.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\Absrtraction\AbstractionExercise\AbstractionExercise\bin\Debug\AbstractionExercise.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\Absrtraction\AbstractionExercise\AbstractionExercise\obj\Debug\AbstractionExercise.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\oops\Absrtraction\AbstractionExercise\AbstractionExercise\obj\Debug\AbstractionExercise.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\Absrtraction\AbstractionExercise\AbstractionExercise\obj\Debug\AbstractionExercise.pdb

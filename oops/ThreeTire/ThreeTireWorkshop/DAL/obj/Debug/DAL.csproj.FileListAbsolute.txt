@@ -1,0 +1,4 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\DAL\bin\Debug\DAL.dll
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\DAL\bin\Debug\DAL.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\DAL\obj\Debug\DAL.dll
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\DAL\obj\Debug\DAL.pdb

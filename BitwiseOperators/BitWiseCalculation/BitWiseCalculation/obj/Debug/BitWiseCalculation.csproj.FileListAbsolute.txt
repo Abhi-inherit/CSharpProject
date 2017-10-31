@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\BitwiseOperators\BitWiseCalculation\BitWiseCalculation\bin\Debug\BitWiseCalculation.exe.config
+C:\Users\HP\Desktop\Abhi\C#\BitwiseOperators\BitWiseCalculation\BitWiseCalculation\bin\Debug\BitWiseCalculation.exe
+C:\Users\HP\Desktop\Abhi\C#\BitwiseOperators\BitWiseCalculation\BitWiseCalculation\bin\Debug\BitWiseCalculation.pdb
+C:\Users\HP\Desktop\Abhi\C#\BitwiseOperators\BitWiseCalculation\BitWiseCalculation\obj\Debug\BitWiseCalculation.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\BitwiseOperators\BitWiseCalculation\BitWiseCalculation\obj\Debug\BitWiseCalculation.exe
+C:\Users\HP\Desktop\Abhi\C#\BitwiseOperators\BitWiseCalculation\BitWiseCalculation\obj\Debug\BitWiseCalculation.pdb

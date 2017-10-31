@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\ExceptionHandling\ExampleIT\ExampleIT\ExampleIT\bin\Debug\ExampleIT.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\ExceptionHandling\ExampleIT\ExampleIT\ExampleIT\obj\Debug\ExampleIT.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\oops\ExceptionHandling\ExampleIT\ExampleIT\ExampleIT\bin\Debug\ExampleIT.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\ExceptionHandling\ExampleIT\ExampleIT\ExampleIT\bin\Debug\ExampleIT.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\ExceptionHandling\ExampleIT\ExampleIT\ExampleIT\obj\Debug\ExampleIT.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\ExceptionHandling\ExampleIT\ExampleIT\ExampleIT\obj\Debug\ExampleIT.pdb

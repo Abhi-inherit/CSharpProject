@@ -1,0 +1,101 @@
+﻿body {
+}
+
+.gridClass{
+overflow:auto;
+}
+
+.mainDiv {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 64.1%;
+  height: 64%;
+  background-color: #eff7fc;
+  border-bottom-right-radius:2em;
+  border-bottom-left-radius:2em;
+  border:1px groove;
+  border-color:#dae7ef;
+}
+
+.imgClass {
+    width:100%;
+}
+
+.imgClass1 {
+    width:100%;
+    height:1%;
+}
+
+.home {
+    position:absolute;
+    margin-top:-5.3%;
+height:9.5%;
+width:10%;
+background-color:#576084;
+text-align:center;
+color:white;
+}
+
+.register {
+    position:absolute;
+    margin-top:-5.3%;
+    margin-left:10.5%;
+height:9.5%;
+width:10%;
+background-color:#576084;
+text-align:center;
+color:white;
+}
+
+.state {
+ position:absolute;
+    margin-top:-5.3%;
+    margin-left:21%;
+height:9.5%;
+width:10%;
+background-color:#576084;
+text-align:center;
+color:white;
+}
+
+.login2 {
+position:absolute;
+margin-left:20%;
+margin-top:10%;
+height:40%;
+width:20%;
+background-color:#edefef;
+}
+
+.login {
+position:absolute;
+margin-left:35%;
+margin-top:25%;
+height:20%;
+width:20%;
+background-color:#edefef;
+    top: -175px;
+    left: -243px;
+}
+
+.districtEdit {
+position:absolute;
+margin-left:37.5%;
+margin-top:8.7%;
+background-color:#edefef;
+height:40%;
+width:42%;
+overflow:auto;
+}
+
+.edit 
+{
+height:20%;
+width:20%;
+
+}
+
+

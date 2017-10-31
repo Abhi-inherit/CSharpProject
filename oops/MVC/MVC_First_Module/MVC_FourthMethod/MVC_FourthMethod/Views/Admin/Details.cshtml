@@ -1,0 +1,45 @@
+﻿@model MVC_FourthMethod.Models.ent_Registration
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ent_Registration</legend>
+
+    <div class="display-label">name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.name)
+    </div>
+
+    <div class="display-label">eMail</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.eMail)
+    </div>
+
+    <div class="display-label">password</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.password)
+    </div>
+
+    <div class="display-label">course</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.course)
+    </div>
+
+    <div class="display-label">district</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.district)
+    </div>
+
+    <div class="display-label">gender</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.gender)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id=Model.studentId  }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

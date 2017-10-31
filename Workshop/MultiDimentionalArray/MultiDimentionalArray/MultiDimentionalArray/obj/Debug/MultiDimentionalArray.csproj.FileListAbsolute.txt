@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\Workshop\MultiDimentionalArray\MultiDimentionalArray\MultiDimentionalArray\bin\Debug\MultiDimentionalArray.exe.config
+C:\Users\HP\Desktop\Abhi\C#\Workshop\MultiDimentionalArray\MultiDimentionalArray\MultiDimentionalArray\bin\Debug\MultiDimentionalArray.exe
+C:\Users\HP\Desktop\Abhi\C#\Workshop\MultiDimentionalArray\MultiDimentionalArray\MultiDimentionalArray\bin\Debug\MultiDimentionalArray.pdb
+C:\Users\HP\Desktop\Abhi\C#\Workshop\MultiDimentionalArray\MultiDimentionalArray\MultiDimentionalArray\obj\Debug\MultiDimentionalArray.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\Workshop\MultiDimentionalArray\MultiDimentionalArray\MultiDimentionalArray\obj\Debug\MultiDimentionalArray.exe
+C:\Users\HP\Desktop\Abhi\C#\Workshop\MultiDimentionalArray\MultiDimentionalArray\MultiDimentionalArray\obj\Debug\MultiDimentionalArray.pdb

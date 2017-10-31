@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_DataReader\SQL_DataReader_2\SQL_DataReader_2\SQL_DataReader_2\bin\Debug\SQL_DataReader_2.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_DataReader\SQL_DataReader_2\SQL_DataReader_2\SQL_DataReader_2\bin\Debug\SQL_DataReader_2.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_DataReader\SQL_DataReader_2\SQL_DataReader_2\SQL_DataReader_2\bin\Debug\SQL_DataReader_2.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_DataReader\SQL_DataReader_2\SQL_DataReader_2\SQL_DataReader_2\obj\Debug\SQL_DataReader_2.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_DataReader\SQL_DataReader_2\SQL_DataReader_2\SQL_DataReader_2\obj\Debug\SQL_DataReader_2.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_DataReader\SQL_DataReader_2\SQL_DataReader_2\SQL_DataReader_2\obj\Debug\SQL_DataReader_2.pdb

@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\Workshop\WorkshopExercise\WorkshopExercise\WorkshopExercise\bin\Debug\WorkshopExercise.exe.config
+C:\Users\HP\Desktop\Abhi\C#\Workshop\WorkshopExercise\WorkshopExercise\WorkshopExercise\bin\Debug\WorkshopExercise.exe
+C:\Users\HP\Desktop\Abhi\C#\Workshop\WorkshopExercise\WorkshopExercise\WorkshopExercise\bin\Debug\WorkshopExercise.pdb
+C:\Users\HP\Desktop\Abhi\C#\Workshop\WorkshopExercise\WorkshopExercise\WorkshopExercise\obj\Debug\WorkshopExercise.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\Workshop\WorkshopExercise\WorkshopExercise\WorkshopExercise\obj\Debug\WorkshopExercise.exe
+C:\Users\HP\Desktop\Abhi\C#\Workshop\WorkshopExercise\WorkshopExercise\WorkshopExercise\obj\Debug\WorkshopExercise.pdb

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Student_RegisterationModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Student_RegisterationModelStoreContainer">
+    <EntitySet Name="District" EntityType="Student_RegisterationModel.Store.District" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StudentDetail" EntityType="Student_RegisterationModel.Store.StudentDetail" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="District">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="district_name" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="StudentDetail">
+    <Key>
+      <PropertyRef Name="studentId" />
+    </Key>
+    <Property Name="studentId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="eMail" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="course" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="district" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="gender" Type="varchar" Nullable="false" MaxLength="7" />
+  </EntityType>
+  <Function Name="DistrictDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="districtId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DistrictInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="districtName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="DistrictUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="districtId" Type="int" Mode="In" />
+    <Parameter Name="districtName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="StudentDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="studentId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="StudentRegister" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="name" Type="varchar" Mode="In" />
+    <Parameter Name="email" Type="varchar" Mode="In" />
+    <Parameter Name="password" Type="varchar" Mode="In" />
+    <Parameter Name="course" Type="varchar" Mode="In" />
+    <Parameter Name="district" Type="varchar" Mode="In" />
+    <Parameter Name="gender" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="StudentRegisterUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="studentId" Type="int" Mode="In" />
+    <Parameter Name="name" Type="varchar" Mode="In" />
+    <Parameter Name="email" Type="varchar" Mode="In" />
+    <Parameter Name="password" Type="varchar" Mode="In" />
+    <Parameter Name="course" Type="varchar" Mode="In" />
+    <Parameter Name="district" Type="varchar" Mode="In" />
+    <Parameter Name="gender" Type="varchar" Mode="In" />
+  </Function>
+</Schema>

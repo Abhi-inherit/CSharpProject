@@ -1,0 +1,84 @@
+﻿@model IEnumerable<MVCExercise.Models.StudentDetail>
+
+@{
+    ViewBag.Title = "Index";
+}
+<script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<link href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet"/>
+
+<link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+<script src="@Url.Content("~/Scripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+
+
+
+<script>
+$(document).ready(function(){
+    $('#myTable').DataTable();
+});
+
+</script>
+
+<h2>Index</h2>
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table id="myTable">
+    <tr>
+        <th>
+            studentId
+        </th>
+        <th>
+            name
+        </th>
+        <th>
+            eMail
+        </th>
+        <th>
+            password
+        </th>
+        <th>
+            course
+        </th>
+        <th>
+            district
+        </th>
+        <th>
+            gender
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.studentId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.eMail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.course)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.district)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gender)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  id=item.studentId  }) |
+            @Html.ActionLink("Details", "Details", new { id=item.studentId  }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.studentId  })
+        </td>
+    </tr>
+}
+
+</table>

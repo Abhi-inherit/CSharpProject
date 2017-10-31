@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="StateManagement.main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+        <div>
+            <img src="WebBanner/Banner.jpg" class="banner"/>
+        </div>
+
+        <a href="Home.aspx"><div class="home"> Home</div></a>
+
+        <a href="ViewState.aspx"><div class="viewState">View State</div></a>
+
+        <a href="HiddenFields.aspx"><div class="hiddenFields">Hidden Fields</div></a>
+
+        <a href="Cookies.aspx"><div class="cookies">Cookies</div></a>
+
+        <a href="QueryString.aspx"><div class="queryString">Query String</div></a>
+
+        <a href="SessionState.aspx"><div class="sessionState">Session State</div></a>
+
+        <div>
+            <img src="WebBanner/images (1).jpg" class="mainImg"/>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </div>
+    </form>
+</body>
+</html>

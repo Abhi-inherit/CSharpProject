@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_DataModel_MiniProject", "MVC_DataModel_MiniProject\MVC_DataModel_MiniProject.csproj", "{86777F2D-9346-438B-98CD-A73DB080EFF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{0691A19A-E716-4149-9D84-DBA01C832FBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{1A4FBEF0-E6AC-4621-BBBE-0FB6BF91F6D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86777F2D-9346-438B-98CD-A73DB080EFF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86777F2D-9346-438B-98CD-A73DB080EFF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86777F2D-9346-438B-98CD-A73DB080EFF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86777F2D-9346-438B-98CD-A73DB080EFF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0691A19A-E716-4149-9D84-DBA01C832FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0691A19A-E716-4149-9D84-DBA01C832FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0691A19A-E716-4149-9D84-DBA01C832FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0691A19A-E716-4149-9D84-DBA01C832FBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A4FBEF0-E6AC-4621-BBBE-0FB6BF91F6D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A4FBEF0-E6AC-4621-BBBE-0FB6BF91F6D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A4FBEF0-E6AC-4621-BBBE-0FB6BF91F6D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A4FBEF0-E6AC-4621-BBBE-0FB6BF91F6D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

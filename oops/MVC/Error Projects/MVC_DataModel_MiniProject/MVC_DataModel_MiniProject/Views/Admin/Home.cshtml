@@ -1,0 +1,39 @@
+﻿@model IEnumerable<BLL.Models.entyPlace>
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+@{
+    string[] img;
+    string images = "";
+          
+}
+
+@{
+int i=0;
+}
+
+<div class="container">  
+<div class="welcome-grids"> 
+
+     @foreach(var item in Model)
+     {
+             img = @item.Image.Split(',');
+             images = "../../Images/Places/" + img[i];         
+            
+			 <div class="col-md-7 welcome-w3left">
+			 <h4>@item.Places</h4>
+			 <p>@item.Discription</p> <br>
+			 <p> @item.District</p> 
+			 </div>
+			 <div class="col-md-5 welcome-w3right">
+			 <img src="@images" class="img-responsive" alt="" />
+			 </div>
+			 <div class="clearfix"></div>
+    }
+             
+
+</div>
+</div>

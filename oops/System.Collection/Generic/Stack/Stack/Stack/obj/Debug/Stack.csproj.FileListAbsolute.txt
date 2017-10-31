@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\Generic\Stack\Stack\Stack\bin\Debug\Stack.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\Generic\Stack\Stack\Stack\bin\Debug\Stack.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\Generic\Stack\Stack\Stack\bin\Debug\Stack.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\Generic\Stack\Stack\Stack\obj\Debug\Stack.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\Generic\Stack\Stack\Stack\obj\Debug\Stack.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\Generic\Stack\Stack\Stack\obj\Debug\Stack.pdb

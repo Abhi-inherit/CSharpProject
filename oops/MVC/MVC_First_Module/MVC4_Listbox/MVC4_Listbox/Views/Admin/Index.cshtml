@@ -1,0 +1,84 @@
+﻿@model IEnumerable<MVC4_Listbox.Models.ent_Registration>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@*-----  Display the larger string value to short.   -----*@
+
+@helper Truncate(string input, int length)
+    {
+        if(input.Length<=length)
+        {
+            @input
+        }
+        else
+        {
+            @input.Substring(0,length)<text> .... </text>
+        }
+    }
+
+
+<script>
+    $(document).ready(function () {
+        $('#example').dataTable();
+    });
+</script>
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table id="example"   cellspacing="0">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            DateOfBirth
+        </th>
+        <th>
+            Address
+        </th>
+        <th>
+            Phone
+        </th>
+        <th>
+            PlaceID
+        </th>
+        <th>
+            PlaceName
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateOfBirth)
+        </td>
+        <td>
+            @Truncate(item.Address, 10)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PlaceID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PlaceName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

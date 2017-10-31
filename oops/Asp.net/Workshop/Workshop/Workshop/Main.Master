@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="Workshop.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+         <img src="Images/img02.jpg"/>
+        <div class="home"><a href="Home.aspx">HOME</a></div>
+        <div class="register"><a href="Register.aspx">REGISTER</a></div>
+        <div class="contactUs"><a href="ContactUs.aspx">CONTACT US</a></div>
+        <div class="login"><a href="Login.aspx">LOGIN</a></div>
+        <div class="search"><a href="Search.aspx">SEARCH</a></div>
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        
+    </div>
+    </form>
+</body>
+</html>

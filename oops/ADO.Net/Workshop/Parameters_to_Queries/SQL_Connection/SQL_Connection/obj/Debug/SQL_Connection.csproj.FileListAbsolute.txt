@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Parameters_to_Queries\SQL_Connection\SQL_Connection\bin\Debug\SQL_Connection.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Parameters_to_Queries\SQL_Connection\SQL_Connection\bin\Debug\SQL_Connection.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Parameters_to_Queries\SQL_Connection\SQL_Connection\bin\Debug\SQL_Connection.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Parameters_to_Queries\SQL_Connection\SQL_Connection\obj\Debug\SQL_Connection.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Parameters_to_Queries\SQL_Connection\SQL_Connection\obj\Debug\SQL_Connection.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Parameters_to_Queries\SQL_Connection\SQL_Connection\obj\Debug\SQL_Connection.pdb

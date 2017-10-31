@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Student_RegisterationModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="Student_RegisterationModelStoreContainer">
+          <EntitySet Name="District" EntityType="Student_RegisterationModel.Store.District" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="StudentDetail" EntityType="Student_RegisterationModel.Store.StudentDetail" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="District">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="district_name" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="StudentDetail">
+          <Key>
+            <PropertyRef Name="studentId" />
+          </Key>
+          <Property Name="studentId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="eMail" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="password" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="course" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="district" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="gender" Type="varchar" Nullable="false" MaxLength="7" />
+        </EntityType>
+        <Function Name="DistrictDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="districtId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DistrictInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="districtName" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="DistrictUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="districtId" Type="int" Mode="In" />
+          <Parameter Name="districtName" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="StudentDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="studentId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="StudentRegister" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="name" Type="varchar" Mode="In" />
+          <Parameter Name="email" Type="varchar" Mode="In" />
+          <Parameter Name="password" Type="varchar" Mode="In" />
+          <Parameter Name="course" Type="varchar" Mode="In" />
+          <Parameter Name="district" Type="varchar" Mode="In" />
+          <Parameter Name="gender" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="StudentRegisterUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="studentId" Type="int" Mode="In" />
+          <Parameter Name="name" Type="varchar" Mode="In" />
+          <Parameter Name="email" Type="varchar" Mode="In" />
+          <Parameter Name="password" Type="varchar" Mode="In" />
+          <Parameter Name="course" Type="varchar" Mode="In" />
+          <Parameter Name="district" Type="varchar" Mode="In" />
+          <Parameter Name="gender" Type="varchar" Mode="In" />
+        </Function>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Student_RegisterationModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Student_RegisterationEntities1" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Districts" EntityType="Student_RegisterationModel.District" />
+          <EntitySet Name="StudentDetails" EntityType="Student_RegisterationModel.StudentDetail" />
+          <FunctionImport Name="DistrictDelete" ReturnType="Collection(String)">
+            <Parameter Name="districtId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DistrictInsert" ReturnType="Collection(String)">
+            <Parameter Name="districtName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="DistrictUpdate" ReturnType="Collection(String)">
+            <Parameter Name="districtId" Mode="In" Type="Int32" />
+            <Parameter Name="districtName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="StudentDelete">
+            <Parameter Name="studentId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="StudentRegister">
+            <Parameter Name="name" Mode="In" Type="String" />
+            <Parameter Name="email" Mode="In" Type="String" />
+            <Parameter Name="password" Mode="In" Type="String" />
+            <Parameter Name="course" Mode="In" Type="String" />
+            <Parameter Name="district" Mode="In" Type="String" />
+            <Parameter Name="gender" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="StudentRegisterUpdate">
+            <Parameter Name="studentId" Mode="In" Type="Int32" />
+            <Parameter Name="name" Mode="In" Type="String" />
+            <Parameter Name="email" Mode="In" Type="String" />
+            <Parameter Name="password" Mode="In" Type="String" />
+            <Parameter Name="course" Mode="In" Type="String" />
+            <Parameter Name="district" Mode="In" Type="String" />
+            <Parameter Name="gender" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="District">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="district_name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="StudentDetail">
+          <Key>
+            <PropertyRef Name="studentId" />
+          </Key>
+          <Property Name="studentId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="eMail" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="course" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="district" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="gender" Type="String" Nullable="false" MaxLength="7" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Student_RegisterationModelStoreContainer" CdmEntityContainer="Student_RegisterationEntities1">
+          <EntitySetMapping Name="Districts">
+            <EntityTypeMapping TypeName="Student_RegisterationModel.District">
+              <MappingFragment StoreEntitySet="District">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="district_name" ColumnName="district_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StudentDetails">
+            <EntityTypeMapping TypeName="Student_RegisterationModel.StudentDetail">
+              <MappingFragment StoreEntitySet="StudentDetail">
+                <ScalarProperty Name="studentId" ColumnName="studentId" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="eMail" ColumnName="eMail" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="course" ColumnName="course" />
+                <ScalarProperty Name="district" ColumnName="district" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="DistrictDelete" FunctionName="Student_RegisterationModel.Store.DistrictDelete" />
+          <FunctionImportMapping FunctionImportName="DistrictInsert" FunctionName="Student_RegisterationModel.Store.DistrictInsert" />
+          <FunctionImportMapping FunctionImportName="DistrictUpdate" FunctionName="Student_RegisterationModel.Store.DistrictUpdate" />
+          <FunctionImportMapping FunctionImportName="StudentDelete" FunctionName="Student_RegisterationModel.Store.StudentDelete" />
+          <FunctionImportMapping FunctionImportName="StudentRegister" FunctionName="Student_RegisterationModel.Store.StudentRegister" />
+          <FunctionImportMapping FunctionImportName="StudentRegisterUpdate" FunctionName="Student_RegisterationModel.Store.StudentRegisterUpdate" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

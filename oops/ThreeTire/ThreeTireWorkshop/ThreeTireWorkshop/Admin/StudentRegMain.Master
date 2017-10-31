@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StudentRegMain.master.cs" Inherits="ThreeTireWorkshop.StudentRegMain" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="AdminStyle/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="mainDiv">
+            <div><img class="imgClass" src="../Image/StdMainImg.png" /></div>
+            <div><img class="imgClass1" src="../Image/menuBar.png" /></div>
+           <a href="../Login.aspx"> <div class="home"><br />Home</div></a>
+            <a href="../Register.aspx"> <div class="register"><br />Register</div></a>
+            <a href="../District.aspx"> <div class="state"><br />Enter District</div></a>
+        </div>
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

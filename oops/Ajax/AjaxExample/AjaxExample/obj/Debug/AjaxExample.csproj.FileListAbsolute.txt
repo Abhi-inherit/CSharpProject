@@ -1,0 +1,5 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\Ajax\AjaxExample\AjaxExample\bin\AjaxExample.dll
+C:\Users\HP\Desktop\Abhi\C#\oops\Ajax\AjaxExample\AjaxExample\bin\AjaxExample.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\Ajax\AjaxExample\AjaxExample\obj\Debug\AjaxExample.dll
+C:\Users\HP\Desktop\Abhi\C#\oops\Ajax\AjaxExample\AjaxExample\obj\Debug\AjaxExample.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\Ajax\AjaxExample\AjaxExample\obj\Debug\AjaxExample.csprojResolveAssemblyReference.cache

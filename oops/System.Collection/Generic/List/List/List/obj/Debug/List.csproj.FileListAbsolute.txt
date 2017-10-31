@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\Generic\List\List\List\bin\Debug\List.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\Generic\List\List\List\bin\Debug\List.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\Generic\List\List\List\bin\Debug\List.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\Generic\List\List\List\obj\Debug\List.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\Generic\List\List\List\obj\Debug\List.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\System.Collection\Generic\List\List\List\obj\Debug\List.pdb

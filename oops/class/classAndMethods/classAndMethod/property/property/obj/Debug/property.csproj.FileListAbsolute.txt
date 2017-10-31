@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\class\classAndMethods\classAndMethod\property\property\bin\Debug\property.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\class\classAndMethods\classAndMethod\property\property\bin\Debug\property.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\class\classAndMethods\classAndMethod\property\property\bin\Debug\property.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\class\classAndMethods\classAndMethod\property\property\obj\Debug\property.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\oops\class\classAndMethods\classAndMethod\property\property\obj\Debug\property.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\class\classAndMethods\classAndMethod\property\property\obj\Debug\property.pdb

@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_Command\SQL_Command_1\SQL_Command_1\bin\Debug\SQL_Command_1.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_Command\SQL_Command_1\SQL_Command_1\bin\Debug\SQL_Command_1.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_Command\SQL_Command_1\SQL_Command_1\bin\Debug\SQL_Command_1.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_Command\SQL_Command_1\SQL_Command_1\obj\Debug\SQL_Command_1.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_Command\SQL_Command_1\SQL_Command_1\obj\Debug\SQL_Command_1.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_Command\SQL_Command_1\SQL_Command_1\obj\Debug\SQL_Command_1.pdb

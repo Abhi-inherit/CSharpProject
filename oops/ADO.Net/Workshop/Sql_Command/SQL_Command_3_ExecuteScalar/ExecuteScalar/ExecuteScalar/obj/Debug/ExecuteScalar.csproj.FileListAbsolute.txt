@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_Command\SQL_Command_3_ExecuteScalar\ExecuteScalar\ExecuteScalar\bin\Debug\ExecuteScalar.exe.config
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_Command\SQL_Command_3_ExecuteScalar\ExecuteScalar\ExecuteScalar\bin\Debug\ExecuteScalar.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_Command\SQL_Command_3_ExecuteScalar\ExecuteScalar\ExecuteScalar\bin\Debug\ExecuteScalar.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_Command\SQL_Command_3_ExecuteScalar\ExecuteScalar\ExecuteScalar\obj\Debug\ExecuteScalar.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_Command\SQL_Command_3_ExecuteScalar\ExecuteScalar\ExecuteScalar\obj\Debug\ExecuteScalar.exe
+C:\Users\HP\Desktop\Abhi\C#\oops\ADO.Net\Workshop\Sql_Command\SQL_Command_3_ExecuteScalar\ExecuteScalar\ExecuteScalar\obj\Debug\ExecuteScalar.pdb

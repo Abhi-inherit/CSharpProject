@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Student_RegisterationModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Student_RegisterationEntities1" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Districts" EntityType="Student_RegisterationModel.District" />
+    <EntitySet Name="StudentDetails" EntityType="Student_RegisterationModel.StudentDetail" />
+    <FunctionImport Name="DistrictDelete" ReturnType="Collection(String)">
+      <Parameter Name="districtId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="DistrictInsert" ReturnType="Collection(String)">
+      <Parameter Name="districtName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DistrictUpdate" ReturnType="Collection(String)">
+      <Parameter Name="districtId" Mode="In" Type="Int32" />
+      <Parameter Name="districtName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="StudentDelete">
+      <Parameter Name="studentId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="StudentRegister">
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="email" Mode="In" Type="String" />
+      <Parameter Name="password" Mode="In" Type="String" />
+      <Parameter Name="course" Mode="In" Type="String" />
+      <Parameter Name="district" Mode="In" Type="String" />
+      <Parameter Name="gender" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="StudentRegisterUpdate">
+      <Parameter Name="studentId" Mode="In" Type="Int32" />
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="email" Mode="In" Type="String" />
+      <Parameter Name="password" Mode="In" Type="String" />
+      <Parameter Name="course" Mode="In" Type="String" />
+      <Parameter Name="district" Mode="In" Type="String" />
+      <Parameter Name="gender" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="District">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="district_name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="StudentDetail">
+    <Key>
+      <PropertyRef Name="studentId" />
+    </Key>
+    <Property Name="studentId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="eMail" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="course" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="district" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="gender" Type="String" Nullable="false" MaxLength="7" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

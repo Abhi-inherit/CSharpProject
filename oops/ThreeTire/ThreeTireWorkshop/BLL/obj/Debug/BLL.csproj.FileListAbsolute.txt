@@ -1,0 +1,7 @@
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\BLL\bin\Debug\BLL.dll
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\BLL\bin\Debug\BLL.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\BLL\obj\Debug\BLL.dll
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\BLL\obj\Debug\BLL.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\BLL\bin\Debug\DAL.dll
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\BLL\bin\Debug\DAL.pdb
+C:\Users\HP\Desktop\Abhi\C#\oops\ThreeTire\ThreeTireWorkshop\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
